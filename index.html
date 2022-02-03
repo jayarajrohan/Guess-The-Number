@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+    </style>
+    <script src="./script/script.js"></script>
+    <title>Guessing game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box2">
+        <div id="top">
+          <button id="again" onclick="playAgain()">Play Again</button>
+          <p id="guess-text">Guess between 1 - 20</p>
+        </div>
+        <h1 id="title">Guess The Number</h1>
+        <div id="bottom">
+          <div id="number-and-button">
+            <input
+              type="number"
+              name="number-guessed"
+              id="number-guessed"
+              placeholder="Enter here"
+            />
+            <button id="check" onclick="checkClicked()">Check!</button>
+          </div>
+          <div id="bottom-right">
+            <p>Instruction: <span id="instruction"></span></p>
+            <p>Score: <span id="score">20</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
